@@ -1,4 +1,4 @@
-import uuid from uuid;
+import uuid from 'uuid';
 
 const ADD_COMMENT = 'ADD_COMMENT';
 const EDIT_COMMENT = 'EDIT_COMMENT';

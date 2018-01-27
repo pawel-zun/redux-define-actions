@@ -42,9 +42,3 @@ function thumbDownComment(id) {
     id
   }
 }
-
-const boundAddComment = text => dispatch(addComment(text));
-const boundEditComment = (id, text) => dispatch(editComment(id, text));
-const boundDeleteComment = id => dispatch(deleteComment(id));
-const boundThumbUpComment = id => dispatch(thumbUpComment(id));
-const boundThumbDownComment = id => dispatch(thumbDownComment(id));

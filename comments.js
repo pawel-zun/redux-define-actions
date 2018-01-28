@@ -3,15 +3,13 @@ import { ADD_COMMENT, DELETE_COMMENT, EDIT_COMMENT, THUMB_UP_COMMENT, THUMB_DOWN
 function comments(state = [], action) {
   switch (action.type) {
     case ADD_COMMENT:
-      return 
-        [
+      return [
           {
             id: action.id,
             text: action.text,
             votes: 0
-          },
-          ...state.comments
-        ]
+          }
+          , ...state.comments];
     case DELETE_COMMENT:
       return state.filter(comment => comment.id !== action.id)
     case EDIT_COMMENT:
